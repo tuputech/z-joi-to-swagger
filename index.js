@@ -63,6 +63,10 @@ module.exports = exports = function parse (schema, existingDefinitions) {
 		return false;
 	}
 
+    if (get(schema, '_flags.presence') === 'required') {
+        swagger.required = true;
+    }
+
 	return { swagger, definitions };
 };
 
