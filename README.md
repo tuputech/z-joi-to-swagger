@@ -1,6 +1,8 @@
 joi-to-swagger
 ==============
 
+[updates after fork](./UPDATE.md)
+
 [![Greenkeeper badge](https://badges.greenkeeper.io/Twipped/joi-to-swagger.svg)](https://greenkeeper.io/)
 
 Conversion library for transforming [Joi](http://npm.im/joi) schema objects into [Swagger](http://swagger.io) schema definitions.
@@ -50,7 +52,7 @@ joi.object().keys({
 ## Usage
 
 ```js
-var j2s = require('joi-to-swagger');
+var j2s = require('z-joi-to-swagger');
 
 var {swagger, definitions} = j2s(mySchema, existingDefinitions);
 ```
